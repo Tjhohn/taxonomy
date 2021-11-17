@@ -1,0 +1,928 @@
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "mammalia"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Carnivora"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "canidae"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "tail"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "fangs"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "fur"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "dog"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "wolf"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "coyote"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "aves.xml"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "aves"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "galliforme"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "phasianidae"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "pheasant"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "aves"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Passeriformes"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Turdidae"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "omnivore"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "blue bird"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "mammalia"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Chondrichthyes"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Carcharhiniformes"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Sphyrnidae"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "dorsal fin"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "gills"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "carnivore"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "hammerhead shark"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "tier3_Out.xml"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Chondrichthyes"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "aves"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "tier3_Out.xml"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Chondrichthyes"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Carcharhiniformes"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "Sphyrnidae"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "bonnethead shark"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> TODO
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> 
