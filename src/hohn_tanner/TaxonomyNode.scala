@@ -3,7 +3,7 @@ package hohn_tanner
 import scala.collection.mutable.ListBuffer
 
 
-class TaxonomyNode(val name: String, var features: ListBuffer[String] ) {
+class TaxonomyNode(val name: String, private var features: ListBuffer[String] ) {
 
   var SubNodes = new ListBuffer[TaxonomyNode]//holds all the lower nodes if exist
 
@@ -21,5 +21,13 @@ class TaxonomyNode(val name: String, var features: ListBuffer[String] ) {
 
   def displayInfo() : String = {
     return name
+  }
+
+  def addToFeature( toAdd : String): Unit ={
+    features += toAdd
+  }
+
+  def getFeatures(): ListBuffer[String] ={
+    features
   }
 }

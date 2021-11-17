@@ -87,6 +87,7 @@ How do we solve this?
 class RedWeightedColorBlock(weight: Double, color: String = "Red", width: Int = 1, height: Int = 1, depth: Int = 1)
   extends ColorBlock(color: String, width: Int, height: Int, depth: Int) {
 
+  var secret : String = "oooooo"
   override def myPrint(): Unit = {
     print(s"Weight: $weight ")
     super.myPrint()
@@ -135,7 +136,11 @@ object TestBlock extends App {
 
   val h = RedWeightedColorBlock(2)
   h.myPrint()
+  println(h.secret)
 
+  var test : ColorBlock = null
+  test = RedWeightedColorBlock(5)
+  println(test)
 
   val i = DefaultBlock()
   i.myPrint()

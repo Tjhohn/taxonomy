@@ -22,16 +22,16 @@ object MainStarterStudent extends App {
           |0) Quit
           |Choice:> """.stripMargin
 
-    var temp = ""
+    var tempInput = ""
 
     while (choice != 0) {
         try {
             print(menu)
             //something to strip out empty lines
-            temp = StdIn.readLine()
-            while(temp.isEmpty)
-                temp = StdIn.readLine()
-            choice = temp.toInt
+            tempInput = StdIn.readLine()
+            while(tempInput.isEmpty)
+                tempInput = StdIn.readLine()
+            choice = tempInput.toInt
 
             choice match {
                 case 0 => println("")
@@ -69,7 +69,6 @@ object MainStarterStudent extends App {
         }//order
         var orderNode : TaxonomyNode = null
         if (continue.toLowerCase() == "y"){
-
             print("What order:> ")
             val orderName = StdIn.readLine()
             var orderOption = classNode.SubNodes.find(node => node.name == orderName.toLowerCase())
@@ -92,7 +91,7 @@ object MainStarterStudent extends App {
                     familyNode = familyOption.get
                 }
                 else{
-                    familyNode = new Family(0, 0, name = familyName.toLowerCase(), features = new ListBuffer[String])
+                    familyNode = new Family( familyName.toLowerCase(), new ListBuffer[String])
                     orderNode.SubNodes += familyNode
                     print("Added family\n")
                     print("Continue (y/n):> ")
@@ -102,19 +101,40 @@ object MainStarterStudent extends App {
                     print("Add summary (y/n):> ")
                     continue = StdIn.readLine()
                     if( continue.toLowerCase() == "y"){
-                        print(s"Update genus count (${familyNode}):> ")
+                        var tempFamily = familyNode.asInstanceOf[Family]
+                        print(s"Update genus count (${tempFamily.getGenusCount()}):> ")
                         val genus = StdIn.readLine()
-                        //familyNode.genus = genus
-                        print(s"Update species count (${familyNode}):> ")
+                        tempFamily.updateGenusCount(genus)
+                        print(s"Update species count (${tempFamily.getSpeciesCount()}):> ")
                         val species = StdIn.readLine()
-                        //familyNode.species = species
+                        tempFamily.updateSpeciesCount(species)
+
+                        do {
+                            print("Add example (y/n) ")
+                            continue = StdIn.readLine()
+                            if(continue.toLowerCase() == "y"){
+                                print("What example:> ")
+                                var example =StdIn.readLine().toLowerCase()
+                                tempFamily.addToExamples(example)
+                            }
+                        }while(continue.toLowerCase() == "y")
+
+
+                        continue = "n"
+                        do {
+                            print("Add feature (y/n) ")
+                            continue = StdIn.readLine()
+                            if(continue.toLowerCase() == "y"){
+                                print("What feature:> ")
+                                var feature =StdIn.readLine().toLowerCase()
+                                tempFamily.addToExamples(feature)
+                            }
+                        }while(continue.toLowerCase() == "y")
+
                     }
                 }
             }
         }
-
-
-
     }
 
 
