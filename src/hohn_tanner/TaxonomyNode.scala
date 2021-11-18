@@ -32,7 +32,7 @@ class TaxonomyNode(private val name: String, private var features: ListBuffer[St
   }
 
   def displayInfo(level : Int) : String = {
-    return name
+    name
   }
 
   def addToFeature( toAdd : String): Unit ={

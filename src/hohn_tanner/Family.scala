@@ -11,7 +11,7 @@ class Family(name : String, features : ListBuffer[String])
   override def displayInfo(level : Int) : String = {
     var outputString = "--"* level + "Family: " + name + "\n"
     outputString = outputString + "--"* level + "feature:"
-    if (features.length > 0){
+    if (features.nonEmpty){
       features.foreach(x => outputString = outputString +" "+ x + "," )
       outputString = outputString.substring(0, outputString.length-1) //removes extra ','
     }
@@ -19,12 +19,12 @@ class Family(name : String, features : ListBuffer[String])
     this.accessSubNodes().foreach(x => outputString = outputString + x.displayInfo(level+ 1))
     outputString = outputString + "\n"
     outputString = outputString + "--"* (level + 1) + "Genus: " + genus.toString + "  Species: " + species.toString + "  Examples:"
-    if (examples.length > 0){
+    if (examples.nonEmpty){
       examples.foreach(x => outputString = outputString +" "+ x + "," )
       outputString = outputString.substring(0, outputString.length-1) //removes extra ','
     }
 
-    return outputString
+    outputString
   }
 
   def getGenusCount(): Int = {

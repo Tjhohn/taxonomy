@@ -8,13 +8,13 @@ class Order(name : String, features : ListBuffer[String])
   override def displayInfo(level : Int ) : String = {
     var outputString = "--"* level + "Order: " + name + "\n"
     outputString = outputString + "--"* level + "feature:"
-    if (features.length > 0){
+    if (features.nonEmpty){
       features.foreach(x => outputString = outputString +" "+ x + "," )
       outputString = outputString.substring(outputString.length-2, outputString.length-1) //removes extra ','
     }
     outputString =outputString + "\n"
     this.accessSubNodes().foreach(x => outputString = outputString + x.displayInfo(level+ 1))
 
-    return outputString
+    outputString
   }
 }
