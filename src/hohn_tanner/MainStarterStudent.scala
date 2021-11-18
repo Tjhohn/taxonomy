@@ -36,7 +36,7 @@ object MainStarterStudent extends App {
             choice match {
                 case 0 => println("")
                 case 1 => addData(taxonomy)
-                case 2 => taxonomy.accessNode().foreach( x =>  println( x.displayInfo() )  )
+                case 2 => taxonomy.accessNode().foreach( x =>  println( x.displayInfo(0) )  )
                 case 3 => println("TODO")
                 case 4 => println("TODO")
                 case 5 => println("TODO")
@@ -97,11 +97,24 @@ object MainStarterStudent extends App {
                     print("Continue (y/n):> ")
                     continue = StdIn.readLine()
                 }//summary
-                if (continue.toLowerCase() == "y"){
+
+                if(continue.toLowerCase() == "y"){
+                    var tempFamily = familyNode.asInstanceOf[Family]
+                    continue = "n"
+                    do {
+                        print("Add feature (y/n):> ")
+                        continue = StdIn.readLine()
+                        if(continue.toLowerCase() == "y"){
+                            print("\nWhat feature:> ")
+                            var feature =StdIn.readLine().toLowerCase()
+                            tempFamily.addToFeature(feature)
+                        }
+                    }while(continue.toLowerCase() == "y")
+
                     print("Add summary (y/n):> ")
                     continue = StdIn.readLine()
                     if( continue.toLowerCase() == "y"){
-                        var tempFamily = familyNode.asInstanceOf[Family]
+
                         print(s"Update genus count (${tempFamily.getGenusCount()}):> ")
                         val genus = StdIn.readLine()
                         tempFamily.updateGenusCount(genus)
@@ -110,7 +123,7 @@ object MainStarterStudent extends App {
                         tempFamily.updateSpeciesCount(species)
 
                         do {
-                            print("Add example (y/n) ")
+                            print("Add example (y/n):> ")
                             continue = StdIn.readLine()
                             if(continue.toLowerCase() == "y"){
                                 print("What example:> ")
@@ -119,20 +132,10 @@ object MainStarterStudent extends App {
                             }
                         }while(continue.toLowerCase() == "y")
 
-
-                        continue = "n"
-                        do {
-                            print("Add feature (y/n) ")
-                            continue = StdIn.readLine()
-                            if(continue.toLowerCase() == "y"){
-                                print("What feature:> ")
-                                var feature =StdIn.readLine().toLowerCase()
-                                tempFamily.addToExamples(feature)
-                            }
-                        }while(continue.toLowerCase() == "y")
-
                     }
+
                 }
+
             }
         }
     }

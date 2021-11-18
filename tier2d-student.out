@@ -26,8 +26,7 @@ Choice:> java.lang.NumberFormatException: For input string: "aves.xml"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
+Choice:> 
 1) Add data
 2) Display data
 3) Remove class
@@ -55,8 +54,7 @@ Choice:> java.lang.NumberFormatException: For input string: "mammal.xml"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
+Choice:> 
 1) Add data
 2) Display data
 3) Remove class

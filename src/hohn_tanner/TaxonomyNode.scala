@@ -19,7 +19,7 @@ class TaxonomyNode(val name: String, private var features: ListBuffer[String] ) 
 
   }
 
-  def displayInfo() : String = {
+  def displayInfo(level : Int) : String = {
     return name
   }
 
