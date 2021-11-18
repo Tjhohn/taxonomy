@@ -77,17 +77,8 @@ feature:
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
+Choice:> What class:> Removed aves
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "aves"
 1) Add data
 2) Display data
 3) Remove class
@@ -104,14 +95,6 @@ feature:
 ----feature: tail, fangs, fur
 
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
-feature:
---Order: galliforme
---feature:
-----Family: phasianidae
-----feature: feathers
-
-------Genus: 12  Species: 150  Examples: chicken like
 
 1) Add data
 2) Display data
@@ -121,17 +104,8 @@ feature:
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
+Choice:> What class:> Class not found
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "nothing"
 1) Add data
 2) Display data
 3) Remove class
@@ -148,14 +122,6 @@ feature:
 ----feature: tail, fangs, fur
 
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
-feature:
---Order: galliforme
---feature:
-----Family: phasianidae
-----feature: feathers
-
-------Genus: 12  Species: 150  Examples: chicken like
 
 1) Add data
 2) Display data
@@ -165,7 +131,7 @@ feature:
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
+Choice:> What class:> Removed mammalia
 
 1) Add data
 2) Display data
@@ -175,32 +141,7 @@ Choice:> TODO
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "mammalia"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Class: mammalia
-feature:
---Order: carnivora
---feature:
-----Family: canidae
-----feature: tail, fangs, fur
-
-------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
-feature:
---Order: galliforme
---feature:
-----Family: phasianidae
-----feature: feathers
-
-------Genus: 12  Species: 150  Examples: chicken like
-
+Choice:> 
 1) Add data
 2) Display data
 3) Remove class

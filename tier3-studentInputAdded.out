@@ -234,18 +234,9 @@ feature:
 7) Calculate species
 0) Quit
 Choice:> [34;1m3[0m
- TODO
+ What class:> [34;1mmammalia[0m
+ Removed mammalia
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mmammalia[0m
- java.lang.NumberFormatException: For input string: "mammalia"
 1) Add data
 2) Display data
 3) Remove class
@@ -255,15 +246,7 @@ Choice:> [34;1mmammalia[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- Class: mammalia
-feature:
---Order: carnivora
---feature:
-----Family: canidae
-----feature: tail, fangs, fur
-
-------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
+ Class: aves
 feature:
 --Order: passeriformes
 --feature:
@@ -316,15 +299,7 @@ What feature:> [34;1mcarnivore[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- Class: mammalia
-feature:
---Order: carnivora
---feature:
-----Family: canidae
-----feature: tail, fangs, fur
-
-------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
+ Class: aves
 feature:
 --Order: passeriformes
 --feature:
@@ -371,18 +346,9 @@ Choice:> [34;1mtier3_Out.xml[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m3[0m
- TODO
+ What class:> [34;1mChondrichthyes[0m
+ Removed chondrichthyes
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mChondrichthyes[0m
- java.lang.NumberFormatException: For input string: "Chondrichthyes"
 1) Add data
 2) Display data
 3) Remove class
@@ -392,18 +358,9 @@ Choice:> [34;1mChondrichthyes[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m3[0m
- TODO
+ What class:> [34;1maves[0m
+ Removed aves
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1maves[0m
- java.lang.NumberFormatException: For input string: "aves"
 1) Add data
 2) Display data
 3) Remove class
@@ -434,31 +391,7 @@ Choice:> [34;1mtier3_Out.xml[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- Class: mammalia
-feature:
---Order: carnivora
---feature:
-----Family: canidae
-----feature: tail, fangs, fur
-
-------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
-feature:
---Order: passeriformes
---feature:
-----Family: turdidae
-----feature: omnivore
-
-------Genus: 21  Species: 171  Examples: blue bird
-Class: chondrichthyes
-feature:
---Order: carcharhiniformes
---feature:
-----Family: sphyrnidae
-----feature: dorsal fin, gills, carnivore
-
-------Genus: 2  Species: 9  Examples: hammerhead shark
-
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -469,15 +402,8 @@ feature:
 0) Quit
 Choice:> [34;1m1[0m
  What class:> [34;1mChondrichthyes[0m
- What order:> [34;1mCarcharhiniformes[0m
- What family:> [34;1mSphyrnidae[0m
- Add feature (y/n):> [34;1mn[0m
- Add summary (y/n):> [34;1my[0m
- Update genus count (2):> [34;1m2[0m
- Update species count (9):> [34;1m9[0m
- Add example (y/n):> [34;1my[0m
- What example:> [34;1mbonnethead shark[0m
- Add example (y/n):> [34;1mn[0m
+ Added class
+Continue (y/n):> [34;1mCarcharhiniformes[0m
  
 1) Add data
 2) Display data
@@ -487,31 +413,94 @@ Choice:> [34;1m1[0m
 6) Find feature
 7) Calculate species
 0) Quit
+Choice:> [34;1mSphyrnidae[0m
+ java.lang.NumberFormatException: For input string: "Sphyrnidae"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> [34;1mn[0m
+ java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> [34;1my[0m
+ java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
 Choice:> [34;1m2[0m
- Class: mammalia
+ Class: chondrichthyes
 feature:
---Order: carnivora
---feature:
-----Family: canidae
-----feature: tail, fangs, fur
 
-------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> [34;1m9[0m
+ Invalid option
+
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> [34;1my[0m
+ java.lang.NumberFormatException: For input string: "y"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> [34;1mbonnethead shark[0m
+ java.lang.NumberFormatException: For input string: "bonnethead shark"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> [34;1mn[0m
+ java.lang.NumberFormatException: For input string: "n"
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> [34;1m2[0m
+ Class: chondrichthyes
 feature:
---Order: passeriformes
---feature:
-----Family: turdidae
-----feature: omnivore
 
-------Genus: 21  Species: 171  Examples: blue bird
-Class: chondrichthyes
-feature:
---Order: carcharhiniformes
---feature:
-----Family: sphyrnidae
-----feature: dorsal fin, gills, carnivore
-
-------Genus: 2  Species: 9  Examples: hammerhead shark, bonnethead shark
 
 1) Add data
 2) Display data

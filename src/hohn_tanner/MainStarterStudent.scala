@@ -37,7 +37,7 @@ object MainStarterStudent extends App {
                 case 0 => println("")
                 case 1 => addData(taxonomy)//GRADING: ADD
                 case 2 => taxonomy.accessNodes().foreach(x =>  println( x.displayInfo(0)))//GRADING: PRINT
-                case 3 => println("TODO")
+                case 3 => removeAnimalClass(taxonomy)
                 case 4 => println("TODO")
                 case 5 => println("TODO")
                 case 6 => println("TODO")
@@ -52,7 +52,6 @@ object MainStarterStudent extends App {
     def addData(tree : Taxonomy ): Unit = {
         var classNode :  TaxonomyNode = null
         var continue = "n"
-
         print("What class:> ")
         val className = StdIn.readLine()
         var classOption = tree.accessNodes().find(node => node.getName() == className.toLowerCase())
@@ -133,6 +132,21 @@ object MainStarterStudent extends App {
         }
     }
 
+    def removeAnimalClass(tree : Taxonomy ): Unit ={
+        var classNode :  TaxonomyNode = null
+        print("What class:> ")
+        val className = StdIn.readLine()
+        var classOption = tree.accessNodes().find(node => node.getName() == className.toLowerCase())
+        if(classOption.isDefined){
+            classNode = classOption.get
+            var temp = tree.accessNodes()
+            tree.replaceNodes(temp.filter(_ != classNode))
+            println(s"Removed ${classNode.getName()}")
+        }
+        else {
+            println("Class not found")
+        }
+    }
 
 }
 

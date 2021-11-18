@@ -120,18 +120,9 @@ feature:
 7) Calculate species
 0) Quit
 Choice:> [34;1m3[0m
- TODO
+ What class:> [34;1maves[0m
+ Removed aves
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1maves[0m
- java.lang.NumberFormatException: For input string: "aves"
 1) Add data
 2) Display data
 3) Remove class
@@ -149,14 +140,6 @@ feature:
 ----feature: tail, fangs, fur
 
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
-feature:
---Order: galliforme
---feature:
-----Family: phasianidae
-----feature: feathers
-
-------Genus: 12  Species: 150  Examples: chicken like
 
 1) Add data
 2) Display data
@@ -167,18 +150,9 @@ feature:
 7) Calculate species
 0) Quit
 Choice:> [34;1m3[0m
- TODO
+ What class:> [34;1mnothing[0m
+ Class not found
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mnothing[0m
- java.lang.NumberFormatException: For input string: "nothing"
 1) Add data
 2) Display data
 3) Remove class
@@ -196,14 +170,6 @@ feature:
 ----feature: tail, fangs, fur
 
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
-feature:
---Order: galliforme
---feature:
-----Family: phasianidae
-----feature: feathers
-
-------Genus: 12  Species: 150  Examples: chicken like
 
 1) Add data
 2) Display data
@@ -214,18 +180,9 @@ feature:
 7) Calculate species
 0) Quit
 Choice:> [34;1m3[0m
- TODO
+ What class:> [34;1mmammalia[0m
+ Removed mammalia
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mmammalia[0m
- java.lang.NumberFormatException: For input string: "mammalia"
 1) Add data
 2) Display data
 3) Remove class
@@ -235,23 +192,7 @@ Choice:> [34;1mmammalia[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- Class: mammalia
-feature:
---Order: carnivora
---feature:
-----Family: canidae
-----feature: tail, fangs, fur
-
-------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
-feature:
---Order: galliforme
---feature:
-----Family: phasianidae
-----feature: feathers
-
-------Genus: 12  Species: 150  Examples: chicken like
-
+ 
 1) Add data
 2) Display data
 3) Remove class

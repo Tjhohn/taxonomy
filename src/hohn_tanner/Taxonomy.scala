@@ -14,5 +14,9 @@ case class Taxonomy() {
     Nodes
   }
 
+  def replaceNodes(newList : ListBuffer[TaxonomyNode]) : Unit={
+    Nodes = newList
+  }
+
 
 }
