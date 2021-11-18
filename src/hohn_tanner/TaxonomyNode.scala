@@ -43,3 +43,28 @@ class TaxonomyNode(private val name: String, private var features: ListBuffer[St
     features
   }
 }
+
+//object PetsFunctional {
+//  def apply(): PetsFunctional = {
+//    new PetsFunctional(ListBuffer[PetFunctional](), "owner")
+//  }
+//
+//  def apply(node: Node):PetsFunctional = {
+//    var owner : String = ""
+//    val pets : ListBuffer[PetFunctional] = ListBuffer[PetFunctional]()
+//
+//    val children = node.child //grab all children
+//    for(child <- children) {
+//      val tag = child.label
+//      println(tag)
+//      tag match {
+//        case "owner" =>
+//          owner = child.attribute("name").getOrElse("").toString
+//        case Pet.TAG =>
+//          pets += PetFunctional(child)
+//        case _ => null
+//      }
+//    }
+//    new PetsFunctional(pets, owner)
+//  }
+//}

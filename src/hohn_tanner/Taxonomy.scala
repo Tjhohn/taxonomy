@@ -18,5 +18,4 @@ case class Taxonomy() {
     Nodes = newList
   }
 
-
 }

@@ -4,6 +4,7 @@ import scala.io.StdIn
 import hohn_tanner.Taxonomy
 
 import scala.collection.mutable.ListBuffer
+import scala.xml.XML
 
 
 
@@ -38,8 +39,8 @@ object MainStarterStudent extends App {
                 case 1 => addData(taxonomy)//GRADING: ADD
                 case 2 => taxonomy.accessNodes().foreach(x =>  println( x.displayInfo(0)))//GRADING: PRINT
                 case 3 => removeAnimalClass(taxonomy)
-                case 4 => println("TODO")
-                case 5 => println("TODO")
+                case 4 => loadXMLFile(taxonomy)//GRADING: READ
+                case 5 => println("TODO") //writeXMLFile(taxonomy)//GRADING: WRITE
                 case 6 => println("TODO")
                 case 7 => println("TODO")
                 case _ => println("Invalid option")
@@ -146,6 +147,24 @@ object MainStarterStudent extends App {
         else {
             println("Class not found")
         }
+    }
+
+    def loadXMLFile(tree : Taxonomy): Unit ={
+        var group: TaxonomyNode = null
+        print("File name:> ")
+        val name = StdIn.readLine()
+        val topNode = XML.loadFile(name) //XML.loadFile will read in the DOM tree
+        if (topNode.label != "taxonomy") { //.label is the "tag"
+            println("Invalid XML file. Needs to be a taxonomy XML file\n")
+        } else {
+            group //= PetsFunctional(topNode) need in taxonomy node an object apply
+        }
+        return group
+    }
+
+    def writeXMLFile(tree : Taxonomy): Unit ={
+        print("File name:> ")
+        val name = StdIn.readLine()
     }
 
 }
