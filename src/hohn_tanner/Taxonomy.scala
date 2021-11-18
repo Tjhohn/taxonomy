@@ -10,7 +10,7 @@ case class Taxonomy() {
 
   }
 
-  def accessNode() : ListBuffer[TaxonomyNode] = {
+  def accessNodes() : ListBuffer[TaxonomyNode] = {
     Nodes
   }
 

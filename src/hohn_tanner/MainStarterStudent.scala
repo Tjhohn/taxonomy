@@ -35,8 +35,8 @@ object MainStarterStudent extends App {
 
             choice match {
                 case 0 => println("")
-                case 1 => addData(taxonomy)
-                case 2 => taxonomy.accessNode().foreach( x =>  println( x.displayInfo(0) )  )
+                case 1 => addData(taxonomy)//GRADING: ADD
+                case 2 => taxonomy.accessNodes().foreach(x =>  println( x.displayInfo(0)))//GRADING: PRINT
                 case 3 => println("TODO")
                 case 4 => println("TODO")
                 case 5 => println("TODO")
@@ -55,14 +55,14 @@ object MainStarterStudent extends App {
 
         print("What class:> ")
         val className = StdIn.readLine()
-        var classOption = tree.accessNode().find(node => node.name == className.toLowerCase())
+        var classOption = tree.accessNodes().find(node => node.getName() == className.toLowerCase())
         if(classOption.isDefined){
             classNode = classOption.get
             continue = "y"
         }
         else {
             classNode = new AnimalClass(className.toLowerCase(), new ListBuffer[String])
-            tree.accessNode() += classNode
+            tree.accessNodes() += classNode
             print("Added class\n")
             print("Continue (y/n):> ")
             continue = StdIn.readLine()
@@ -71,13 +71,13 @@ object MainStarterStudent extends App {
         if (continue.toLowerCase() == "y"){
             print("What order:> ")
             val orderName = StdIn.readLine()
-            var orderOption = classNode.SubNodes.find(node => node.name == orderName.toLowerCase())
+            var orderOption = classNode.accessSubNodes().find(node => node.getName() == orderName.toLowerCase())
             if(orderOption.isDefined){
                 orderNode = orderOption.get
             }
             else{
                 orderNode = new Order(orderName.toLowerCase(), new ListBuffer[String])
-                classNode.SubNodes += orderNode
+                classNode.addSubNode(orderNode)
                 print("Added order\n")
                 print("Continue (y/n):> ")
                 continue = StdIn.readLine()
@@ -86,18 +86,17 @@ object MainStarterStudent extends App {
             if (continue.toLowerCase() == "y"){
                 print("What family:> ")
                 val familyName = StdIn.readLine()
-                var familyOption = orderNode.SubNodes.find(node => node.name == familyName.toLowerCase())
+                var familyOption = orderNode.accessSubNodes().find(node => node.getName() == familyName.toLowerCase())
                 if(familyOption.isDefined){
                     familyNode = familyOption.get
                 }
                 else{
                     familyNode = new Family( familyName.toLowerCase(), new ListBuffer[String])
-                    orderNode.SubNodes += familyNode
+                    orderNode.addSubNode(familyNode)
                     print("Added family\n")
                     print("Continue (y/n):> ")
                     continue = StdIn.readLine()
-                }//summary
-
+                }
                 if(continue.toLowerCase() == "y"){
                     var tempFamily = familyNode.asInstanceOf[Family]
                     continue = "n"
@@ -110,18 +109,15 @@ object MainStarterStudent extends App {
                             tempFamily.addToFeature(feature)
                         }
                     }while(continue.toLowerCase() == "y")
-
-                    print("Add summary (y/n):> ")
+                    print("Add summary (y/n):> ")//summary
                     continue = StdIn.readLine()
                     if( continue.toLowerCase() == "y"){
-
                         print(s"Update genus count (${tempFamily.getGenusCount()}):> ")
                         val genus = StdIn.readLine()
                         tempFamily.updateGenusCount(genus)
                         print(s"Update species count (${tempFamily.getSpeciesCount()}):> ")
                         val species = StdIn.readLine()
                         tempFamily.updateSpeciesCount(species)
-
                         do {
                             print("Add example (y/n):> ")
                             continue = StdIn.readLine()
@@ -131,11 +127,8 @@ object MainStarterStudent extends App {
                                 tempFamily.addToExamples(example)
                             }
                         }while(continue.toLowerCase() == "y")
-
                     }
-
                 }
-
             }
         }
     }

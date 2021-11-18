@@ -13,7 +13,7 @@ class Order(name : String, features : ListBuffer[String])
       outputString = outputString.substring(outputString.length-2, outputString.length-1) //removes extra ','
     }
     outputString =outputString + "\n"
-    this.SubNodes.foreach(x => outputString = outputString + x.displayInfo(level+ 1))
+    this.accessSubNodes().foreach(x => outputString = outputString + x.displayInfo(level+ 1))
 
     return outputString
   }

@@ -16,7 +16,7 @@ class Family(name : String, features : ListBuffer[String])
       outputString = outputString.substring(0, outputString.length-1) //removes extra ','
     }
     outputString =outputString + "\n"
-    this.SubNodes.foreach(x => outputString = outputString + x.displayInfo(level+ 1))
+    this.accessSubNodes().foreach(x => outputString = outputString + x.displayInfo(level+ 1))
     outputString = outputString + "\n"
     outputString = outputString + "--"* (level + 1) + "Genus: " + genus.toString + "  Species: " + species.toString + "  Examples:"
     if (examples.length > 0){

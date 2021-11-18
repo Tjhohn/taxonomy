@@ -3,9 +3,21 @@ package hohn_tanner
 import scala.collection.mutable.ListBuffer
 
 
-class TaxonomyNode(val name: String, private var features: ListBuffer[String] ) {
+class TaxonomyNode(private val name: String, private var features: ListBuffer[String] ) {
 
-  var SubNodes = new ListBuffer[TaxonomyNode]//holds all the lower nodes if exist
+  private var SubNodes = new ListBuffer[TaxonomyNode]//holds all the lower nodes if exist
+
+  def getName(): String ={
+    name
+  }
+
+  def accessSubNodes() : ListBuffer[TaxonomyNode] ={
+    SubNodes
+  }
+
+  def addSubNode(toAdd : TaxonomyNode) : Unit ={
+    SubNodes += toAdd
+  }
 
   def loadFile() : Unit = {
 
