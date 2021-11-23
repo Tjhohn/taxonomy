@@ -56,8 +56,6 @@ class Family(name : String, features : ListBuffer[String])
     examples += toAdd
   }
 
-//  override def writeXml(rank: String): Elem = super.writeXml("family")
-
   override def writeXml(rank : String): Elem = {
     val attr: mutable.HashMap[String, String] = mutable.HashMap(("name", name))
     var children = Seq[Elem]()
@@ -66,7 +64,6 @@ class Family(name : String, features : ListBuffer[String])
       children = children :+ makeNode("feature", null, text)
     })
 
-    //var elem : Elem = super.writeXml("family")
     var textString : String = ""
     if (examples.nonEmpty){
       examples.foreach(x => textString = textString +" "+ x + "," )
