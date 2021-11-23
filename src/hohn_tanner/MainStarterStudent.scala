@@ -163,42 +163,15 @@ object MainStarterStudent extends App {
         }
     }
 
-
-    /* general pattern
-        grab attributes
-        make attribute
-
-        foreach childClass
-            childeNode = childClass.WriteXML()
-            node.append(childNode)
-
-        return node*/
     def writeXMLFile(tree : Taxonomy): Unit ={
         print("File name:> ")
         val filename = StdIn.readLine()
-
-//        var classChildren =  Seq[Elem]()
-//        tree.accessNodes().foreach(x => {
-//            var orderChildren = Seq[Elem]()
-//            classChildren = classChildren  :+XMLHelper.makeNode("class",mutable.HashMap("name" -> x.getName()), orderChildren)
-//            x.accessSubNodes()foreach( y => orderChildren = orderChildren  :+
-//            XMLHelper.makeNode("order",mutable.HashMap("name" -> y.getName())))
-//        })
         var children =  Seq[Elem]()
         tree.accessNodes().foreach(x =>{
 
             children = children :+ x.writeXml("class")
         })
-
-//        //make pet nodes
-//        var petXml = pets.map(x => x.writeXml())
-//        val children = ownerXml ++ petXml //need ALL siblings at one time
-//        XMLHelper.makeNode(TAG, null, children)
-
-
-
         var xmlTree : Node = XMLHelper.makeNode("taxonomy",null,  children)
-
         val prettyPrinter = new scala.xml.PrettyPrinter(80, 2)
         val prettyXml = prettyPrinter.format(xmlTree)
         val write = new FileWriter(filename )
