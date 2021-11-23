@@ -1,6 +1,7 @@
 package hohn_tanner
 
 import scala.collection.mutable.ListBuffer
+import scala.xml.Elem
 
 class Order(name : String, features : ListBuffer[String])
   extends TaxonomyNode( name , features ){
@@ -17,4 +18,6 @@ class Order(name : String, features : ListBuffer[String])
 
     outputString
   }
+
+  override def writeXml(rank: String): Elem = super.writeXml("order")
 }

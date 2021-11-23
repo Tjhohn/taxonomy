@@ -3,8 +3,10 @@ package hohn_tanner
 import scala.io.StdIn
 import hohn_tanner.Taxonomy
 
+import java.io.FileWriter
+import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
-import scala.xml.XML
+import scala.xml.{Elem, Node, XML}
 
 
 
@@ -39,8 +41,8 @@ object MainStarterStudent extends App {
                 case 1 => addData(taxonomy)//GRADING: ADD
                 case 2 => taxonomy.accessNodes().foreach(x =>  println( x.displayInfo(0)))//GRADING: PRINT
                 case 3 => removeAnimalClass(taxonomy)
-                case 4 => loadXMLFile(taxonomy)//GRADING: READ
-                case 5 => println("TODO") //writeXMLFile(taxonomy)//GRADING: WRITE
+                case 4 => println("going to try save first....")//loadXMLFile(taxonomy)//GRADING: READ
+                case 5 => writeXMLFile(taxonomy)//GRADING: WRITE
                 case 6 => println("TODO")
                 case 7 => println("TODO")
                 case _ => println("Invalid option")
@@ -157,14 +159,51 @@ object MainStarterStudent extends App {
         if (topNode.label != "taxonomy") { //.label is the "tag"
             println("Invalid XML file. Needs to be a taxonomy XML file\n")
         } else {
-            group //= PetsFunctional(topNode) need in taxonomy node an object apply
+            group = TaxonomyNode(topNode)//= PetsFunctional(topNode) need in taxonomy node an object apply
         }
-        return group
     }
 
+
+    /* general pattern
+        grab attributes
+        make attribute
+
+        foreach childClass
+            childeNode = childClass.WriteXML()
+            node.append(childNode)
+
+        return node*/
     def writeXMLFile(tree : Taxonomy): Unit ={
         print("File name:> ")
-        val name = StdIn.readLine()
+        val filename = StdIn.readLine()
+
+//        var classChildren =  Seq[Elem]()
+//        tree.accessNodes().foreach(x => {
+//            var orderChildren = Seq[Elem]()
+//            classChildren = classChildren  :+XMLHelper.makeNode("class",mutable.HashMap("name" -> x.getName()), orderChildren)
+//            x.accessSubNodes()foreach( y => orderChildren = orderChildren  :+
+//            XMLHelper.makeNode("order",mutable.HashMap("name" -> y.getName())))
+//        })
+        var children =  Seq[Elem]()
+        tree.accessNodes().foreach(x =>{
+
+            children = children :+ x.writeXml("class")
+        })
+
+//        //make pet nodes
+//        var petXml = pets.map(x => x.writeXml())
+//        val children = ownerXml ++ petXml //need ALL siblings at one time
+//        XMLHelper.makeNode(TAG, null, children)
+
+
+
+        var xmlTree : Node = XMLHelper.makeNode("taxonomy",null,  children)
+
+        val prettyPrinter = new scala.xml.PrettyPrinter(80, 2)
+        val prettyXml = prettyPrinter.format(xmlTree)
+        val write = new FileWriter(filename )
+        write.write( prettyXml)
+        write.close()
     }
 
 }

@@ -1,6 +1,11 @@
 package hohn_tanner
 
+import hohn_tanner.XMLHelper.makeNode
+
+import scala.:+
+import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+import scala.xml.{Elem, Text}
 
 class Family(name : String, features : ListBuffer[String])
   extends TaxonomyNode( name , features){
@@ -50,5 +55,29 @@ class Family(name : String, features : ListBuffer[String])
   def addToExamples(toAdd : String): Unit = {
     examples += toAdd
   }
+
+//  override def writeXml(rank: String): Elem = super.writeXml("family")
+
+  override def writeXml(rank : String): Elem = {
+    val attr: mutable.HashMap[String, String] = mutable.HashMap(("name", name))
+    var children = Seq[Elem]()
+    features.foreach(x => {
+      val text = Text(x)
+      children = children :+ makeNode("feature", null, text)
+    })
+
+    //var elem : Elem = super.writeXml("family")
+    var textString : String = ""
+    if (examples.nonEmpty){
+      examples.foreach(x => textString = textString +" "+ x + "," )
+      textString = textString.substring(1, textString.length) //removes front space
+      textString = textString.substring(0, textString.length-1) //removes extra ','
+    }
+    val text = Text(textString)
+    val sumAttr: mutable.HashMap[String, String] = mutable.HashMap(("species", species.toString), ("genus", genus.toString))
+    children = children :+ makeNode("summary", sumAttr, text)
+    XMLHelper.makeNode( "family", attr, children )
+  }
+
 
 }
