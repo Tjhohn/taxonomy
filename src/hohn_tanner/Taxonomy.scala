@@ -20,13 +20,13 @@ case class Taxonomy() {
   }
 
   def addClass(node: Node): Unit ={
-    var newClass : TaxonomyNode = TaxonomyNode(node.label, new ListBuffer[String] )
+    var newClass : TaxonomyNode = TaxonomyNode(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
     val children = node.child
     for(child <- children) {
       val tag = child.label
       tag match {
         case "order" =>
-          var newOrder : TaxonomyNode = TaxonomyNode(tag, new ListBuffer[String])
+          var newOrder : TaxonomyNode = TaxonomyNode(child.attribute("name").getOrElse("").toString, new ListBuffer[String])
           newClass.addSubNode(newOrder)
         //if pet tag, make a new pet and have it load the info it wants, then add it to the list
         //val pet = Pet() //full functional would give the node to the constructor
@@ -37,7 +37,7 @@ case class Taxonomy() {
         case _ => null
       }
     }
-    Nodes :+ newClass
+    this.accessNodes() += newClass
   }
 
   def loadXml(node : Node): Unit = {
@@ -55,12 +55,6 @@ case class Taxonomy() {
       tag match {
         case "class" =>
           addClass(child)
-        case "order" =>
-          //if pet tag, make a new pet and have it load the info it wants, then add it to the list
-          //val pet = Pet() //full functional would give the node to the constructor
-          //pet.loadXml(child)
-          //pets += pet
-        case "family" =>
         case _ => null
       }
     }

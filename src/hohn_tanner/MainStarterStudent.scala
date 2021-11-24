@@ -1,10 +1,7 @@
 package hohn_tanner
 
 import scala.io.StdIn
-import hohn_tanner.Taxonomy
-
 import java.io.FileWriter
-import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.xml.{Elem, Node, XML}
 
@@ -169,8 +166,6 @@ object MainStarterStudent extends App {
         {
             case e: Exception => println("could not open file: " + e.getMessage())
         }
-
-
     }
 
     def writeXMLFile(tree : Taxonomy): Unit ={

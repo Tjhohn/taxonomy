@@ -39,6 +39,7 @@ feature:
 ----feature: tail, fangs, fur
 
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
+aves
 
 1) Add data
 2) Display data
@@ -48,26 +49,8 @@ feature:
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> What class:> Added class
+Choice:> What class:> What order:> What family:> Added family
 Continue (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "phasianidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
 1) Add data
 2) Display data
 3) Remove class
@@ -152,14 +135,7 @@ feature:
 ----feature: tail, fangs, fur
 
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
-Class: aves
-feature:
---Order: Passeriformes
---feature:
-----Family: Turdidae
-----feature: omnivore
-
-------Genus: 21  Species: 171  Examples: blue bird
+aves
 
 1) Add data
 2) Display data
@@ -179,14 +155,7 @@ Choice:> What class:> Removed mammalia
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> Class: aves
-feature:
---Order: Passeriformes
---feature:
-----Family: Turdidae
-----feature: omnivore
-
-------Genus: 21  Species: 171  Examples: blue bird
+Choice:> aves
 
 1) Add data
 2) Display data
@@ -211,14 +180,7 @@ What feature:> Add feature (y/n):> Add summary (y/n):> Update genus count (0):> 
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> Class: aves
-feature:
---Order: Passeriformes
---feature:
-----Family: Turdidae
-----feature: omnivore
-
-------Genus: 21  Species: 171  Examples: blue bird
+Choice:> aves
 Class: Chondrichthyes
 feature:
 --Order: Carcharhiniformes
@@ -282,6 +244,8 @@ feature:
 ----feature: dorsal fin, gills, carnivore
 
 ------Genus: 2  Species: 9  Examples: hammerhead shark
+aves
+Chondrichthyes
 
 1) Add data
 2) Display data
@@ -308,6 +272,8 @@ feature:
 ----feature: dorsal fin, gills, carnivore
 
 ------Genus: 2  Species: 9  Examples: hammerhead shark, bonnethead shark
+aves
+Chondrichthyes
 
 1) Add data
 2) Display data

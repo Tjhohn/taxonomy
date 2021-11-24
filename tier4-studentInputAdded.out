@@ -167,8 +167,17 @@ Choice:> [34;1mxyz[0m
 0) Quit
 Choice:> [34;1m1[0m
  What class:> [34;1maves[0m
- Added class
-Continue (y/n):> [34;1mPasseriformes[0m
+ What order:> [34;1mPasseriformes[0m
+ Added order
+Continue (y/n):> [34;1my[0m
+ What family:> [34;1mTurdidae[0m
+ Added family
+Continue (y/n):> [34;1my[0m
+ Add feature (y/n):> [34;1my[0m
+ 
+What feature:> [34;1msings[0m
+ Add feature (y/n):> [34;1mn[0m
+ Add summary (y/n):> [34;1mn[0m
  
 1) Add data
 2) Display data
@@ -178,80 +187,10 @@ Continue (y/n):> [34;1mPasseriformes[0m
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mTurdidae[0m
- java.lang.NumberFormatException: For input string: "Turdidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1msings[0m
- java.lang.NumberFormatException: For input string: "sings"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
 Choice:> [34;1m2[0m
- Class: aves
-feature:
-
+ mammalia
+aves
+Chondrichthyes
 
 1) Add data
 2) Display data

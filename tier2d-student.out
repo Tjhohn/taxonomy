@@ -16,7 +16,8 @@ Choice:> File name:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> 
+Choice:> aves
+
 1) Add data
 2) Display data
 3) Remove class
@@ -34,7 +35,9 @@ Choice:> File name:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> 
+Choice:> aves
+mammalia
+
 1) Add data
 2) Display data
 3) Remove class

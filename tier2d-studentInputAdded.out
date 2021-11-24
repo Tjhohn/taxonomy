@@ -19,7 +19,8 @@ Choice:> [34;1m4[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- 
+ aves
+
 1) Add data
 2) Display data
 3) Remove class
@@ -40,7 +41,9 @@ Choice:> [34;1m4[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- 
+ aves
+mammalia
+
 1) Add data
 2) Display data
 3) Remove class
