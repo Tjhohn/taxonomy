@@ -161,50 +161,69 @@ What feature:> Add feature (y/n):> Add summary (y/n):>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> r
-e
+Choice:> Class: mammalia
+feature: Fur
+--Order: Carnivora
+--feature: carnivore
 ----Family: Canidae
 ----feature: Fangs, Tail
 
-------Genus: 12  Species: 37  Examples: Dog, Wolf, Coyote----Family: felidae
+------Genus: 12  Species: 37  Examples: Dog, Wolf, Coyote
+----Family: felidae
 ----feature: Fangs, retractable claws, Tail
 
-------Genus: 18  Species: 36  Examples: Lion, tiger, domestic catc
+------Genus: 18  Species: 36  Examples: Lion, tiger, domestic cat
+--Order: Cetacea
+--feature: aquatic
 ----Family: Delphinidae
 ----feature: echolocation, beak
 
 ------Genus: 17  Species: 32  Examples: dolphins, porpoises, and whales
-k
-r
+
+Class: aves
+feature: Feathers, beak
+--Order: galliforme
+--feature: chicken-like, ground feeder
 ----Family: phasianidae
 ----feature: terrestrial
 
-------Genus: 12  Species: 150  Examples: Turkeys, Chickens, Quailse
+------Genus: 12  Species: 150  Examples: Turkeys, Chickens, Quails
+--Order: Falconiformes
+--feature: diurnal, carnivore
 ----Family: Apterygidae
 ----feature: small
 
-------Genus: 67  Species: 233  Examples: Eagle, Hawk, Kitesd
+------Genus: 67  Species: 233  Examples: Eagle, Hawk, Kites
+--Order: Struthioniformes
+--feature: flightless, omnivore, three-toed
 ----Family: Apterygidae
 ----feature: small
 
-------Genus: 1  Species: 5  Examples: Kiwi----Family: Dromaiidae
+------Genus: 1  Species: 5  Examples: Kiwi
+----Family: Dromaiidae
 ----feature: tail-less
 
-------Genus: 1  Species: 1  Examples: Emu----Family: Struthionidae
+------Genus: 1  Species: 1  Examples: Emu
+----Family: Struthionidae
 ----feature: large
 
-------Genus: 1  Species: 2  Examples: Ostrich--Order: Passeriformes
+------Genus: 1  Species: 2  Examples: Ostrich
+--Order: Passeriformes
 --feature:
 ----Family: Turdidae
 ----feature: sings
 
 ------Genus: 0  Species: 0  Examples:
-s
-m
+
+Class: Chondrichthyes
+feature: aquatic, cartilage skeleton, gills
+--Order: Carcharhiniformes
+--feature: dorsal fim
 ----Family: Sphyrnidae
 ----feature: broad head
 
 ------Genus: 2  Species: 9  Examples: hammerhead shark
+
 
 1) Add data
 2) Display data

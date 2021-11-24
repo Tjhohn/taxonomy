@@ -29,6 +29,7 @@ class Family(name : String, features : ListBuffer[String])
       outputString = outputString.substring(0, outputString.length-1) //removes extra ','
     }
 
+    outputString = outputString + "\n"
     outputString
   }
 

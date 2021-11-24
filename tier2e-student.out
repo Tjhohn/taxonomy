@@ -46,26 +46,33 @@ Choice:> File name:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> r
-e
+Choice:> Class: mammal
+feature: Fur
+--Order: Carnivora
+--feature: carnivore
 ----Family: Canidae
 ----feature: Fangs, Tail
 
-------Genus: 12  Species: 0  Examples: Dog, Wolf, Coyote----Family: felidae
+------Genus: 12  Species: 0  Examples: Dog, Wolf, Coyote
+----Family: felidae
 ----feature:
 
-------Genus: 0  Species: 0  Examples:--Order: Cetacea
+------Genus: 0  Species: 0  Examples:
+--Order: Cetacea
 --feature:
 ----Family: Delphinidae
 ----feature:
 
-------Genus: 17  Species: 32  Examples: --Order: Struthioniformes
+------Genus: 17  Species: 32  Examples: 
+--Order: Struthioniformes
 --feature:
-e
+--Order: Falconiformes
+--feature: diurnal, carnivore
 ----Family: Apterygidae
 ----feature:
 
 ------Genus: 0  Species: 0  Examples:
+
 Class: aves
 feature:
 
