@@ -16,7 +16,7 @@ Choice:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> going to try save first....
+Choice:> File name:> could not open file: doesNotExist.xml (The system cannot find the file specified)
 
 1) Add data
 2) Display data
@@ -26,16 +26,8 @@ Choice:> going to try save first....
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "doesNotExist.xml"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> going to try save first....
+Choice:> File name:> Invalid XML file. Needs to be an taxonomy XML file
+
 
 1) Add data
 2) Display data
@@ -45,26 +37,7 @@ Choice:> going to try save first....
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "singleBad.xml"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> going to try save first....
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "messy.xml"
+Choice:> File name:> 
 1) Add data
 2) Display data
 3) Remove class

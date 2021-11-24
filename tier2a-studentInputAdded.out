@@ -49,7 +49,7 @@ What feature:> [34;1mfur[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur
@@ -96,7 +96,7 @@ What feature:> [34;1mfeathers[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur
@@ -134,7 +134,7 @@ Choice:> [34;1m3[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur
@@ -164,7 +164,7 @@ Choice:> [34;1m3[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur

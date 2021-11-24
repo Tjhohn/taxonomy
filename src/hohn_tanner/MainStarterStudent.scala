@@ -41,10 +41,10 @@ object MainStarterStudent extends App {
                 case 1 => addData(taxonomy)//GRADING: ADD
                 case 2 => taxonomy.accessNodes().foreach(x =>  println( x.displayInfo(0)))//GRADING: PRINT
                 case 3 => removeAnimalClass(taxonomy)
-                case 4 => println("going to try save first....")//loadXMLFile(taxonomy)//GRADING: READ
+                case 4 => loadXMLFile(taxonomy)//GRADING: READ
                 case 5 => writeXMLFile(taxonomy)//GRADING: WRITE
-                case 6 => println("TODO")
-                case 7 => println("TODO")
+                case 6 => println("TODO") //GRADING: FIND
+                case 7 => println("TODO") //GRADING: PARALLEL
                 case _ => println("Invalid option")
             }
         } catch {
@@ -57,13 +57,13 @@ object MainStarterStudent extends App {
         var continue = "n"
         print("What class:> ")
         val className = StdIn.readLine()
-        var classOption = tree.accessNodes().find(node => node.getName() == className.toLowerCase())
+        var classOption = tree.accessNodes().find(node => node.getName().toLowerCase() == className.toLowerCase())
         if(classOption.isDefined){
             classNode = classOption.get
             continue = "y"
         }
         else {
-            classNode = new AnimalClass(className.toLowerCase(), new ListBuffer[String])
+            classNode = new AnimalClass(className, new ListBuffer[String])
             tree.accessNodes() += classNode
             print("Added class\n")
             print("Continue (y/n):> ")
@@ -73,12 +73,12 @@ object MainStarterStudent extends App {
         if (continue.toLowerCase() == "y"){
             print("What order:> ")
             val orderName = StdIn.readLine()
-            var orderOption = classNode.accessSubNodes().find(node => node.getName() == orderName.toLowerCase())
+            var orderOption = classNode.accessSubNodes().find(node => node.getName().toLowerCase() == orderName.toLowerCase())
             if(orderOption.isDefined){
                 orderNode = orderOption.get
             }
             else{
-                orderNode = new Order(orderName.toLowerCase(), new ListBuffer[String])
+                orderNode = new Order(orderName, new ListBuffer[String])
                 classNode.addSubNode(orderNode)
                 print("Added order\n")
                 print("Continue (y/n):> ")
@@ -88,12 +88,12 @@ object MainStarterStudent extends App {
             if (continue.toLowerCase() == "y"){
                 print("What family:> ")
                 val familyName = StdIn.readLine()
-                var familyOption = orderNode.accessSubNodes().find(node => node.getName() == familyName.toLowerCase())
+                var familyOption = orderNode.accessSubNodes().find(node => node.getName().toLowerCase() == familyName.toLowerCase())
                 if(familyOption.isDefined){
                     familyNode = familyOption.get
                 }
                 else{
-                    familyNode = new Family( familyName.toLowerCase(), new ListBuffer[String])
+                    familyNode = new Family( familyName, new ListBuffer[String])
                     orderNode.addSubNode(familyNode)
                     print("Added family\n")
                     print("Continue (y/n):> ")
@@ -155,12 +155,22 @@ object MainStarterStudent extends App {
         var group: TaxonomyNode = null
         print("File name:> ")
         val name = StdIn.readLine()
-        val topNode = XML.loadFile(name) //XML.loadFile will read in the DOM tree
-        if (topNode.label != "taxonomy") { //.label is the "tag"
-            println("Invalid XML file. Needs to be a taxonomy XML file\n")
-        } else {
-            group = TaxonomyNode(topNode)//= PetsFunctional(topNode) need in taxonomy node an object apply
+        try
+        {
+            val topNode = XML.loadFile(name) //XML.loadFile will read in the DOM tree
+            if (topNode.label != "taxonomy") { //.label is the "tag"
+                println("Invalid XML file. Needs to be an taxonomy XML file\n")
+            } else {
+                tree.loadXml(topNode)
+                group = TaxonomyNode(topNode)
+            }
         }
+        catch
+        {
+            case e: Exception => println("could not open file: " + e.getMessage())
+        }
+
+
     }
 
     def writeXMLFile(tree : Taxonomy): Unit ={

@@ -7,7 +7,7 @@ import scala.collection.mutable.ListBuffer
 import scala.xml.{Elem, Node, Text}
 
 
-class TaxonomyNode(private val name: String, private var features: ListBuffer[String] ) {
+class TaxonomyNode(private var name: String, private var features: ListBuffer[String] ) {
 
   private var SubNodes = new ListBuffer[TaxonomyNode]//holds all the lower nodes if exist
 
@@ -57,6 +57,12 @@ class TaxonomyNode(private val name: String, private var features: ListBuffer[St
     SubNodes.foreach(x => children = children :+ x.writeXml("order"))
     return XMLHelper.makeNode( rank, attr, children )
   }
+
+  def loadXml(node: Node): Unit = {
+    val attr: mutable.HashMap[String, String] = mutable.HashMap(("name", name))
+    val text = Text(name) //ending node
+    return XMLHelper.makeNode( "class", attr, text)
+  }
 }
 
 object TaxonomyNode {
@@ -73,10 +79,15 @@ object TaxonomyNode {
         case "order" =>
           className = child.attribute("name").getOrElse("").toString
         case "family" =>
+          className = child.attribute("name").getOrElse("").toString
         case _ => null
       }
     }
     new TaxonomyNode(className, new ListBuffer[String]  )
+  }
+
+  def apply( name: String, features: ListBuffer[String] ): TaxonomyNode ={
+    return new TaxonomyNode(name, features)
   }
 }
 //object PetsFunctional {

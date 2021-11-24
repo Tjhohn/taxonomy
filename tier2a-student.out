@@ -24,7 +24,7 @@ What feature:> Add feature (y/n):> Add summary (y/n):> Update genus count (0):> 
 0) Quit
 Choice:> Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur
@@ -54,7 +54,7 @@ What feature:> Add feature (y/n):> Add summary (y/n):> Update genus count (0):> 
 0) Quit
 Choice:> Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur
@@ -89,7 +89,7 @@ Choice:> What class:> Removed aves
 0) Quit
 Choice:> Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur
@@ -116,7 +116,7 @@ Choice:> What class:> Class not found
 0) Quit
 Choice:> Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur

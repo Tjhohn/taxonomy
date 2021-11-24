@@ -22,17 +22,7 @@ What feature:> Add feature (y/n):> Add summary (y/n):> Update genus count (0):> 
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> going to try save first....
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "aves.xml"
+Choice:> File name:> 
 1) Add data
 2) Display data
 3) Remove class
@@ -43,7 +33,7 @@ Choice:> java.lang.NumberFormatException: For input string: "aves.xml"
 0) Quit
 Choice:> Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur
@@ -156,7 +146,7 @@ What feature:> Add feature (y/n):> Add summary (y/n):> Update genus count (0):> 
 0) Quit
 Choice:> Class: mammalia
 feature:
---Order: carnivora
+--Order: Carnivora
 --feature:
 ----Family: canidae
 ----feature: tail, fangs, fur
@@ -164,9 +154,9 @@ feature:
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
 Class: aves
 feature:
---Order: passeriformes
+--Order: Passeriformes
 --feature:
-----Family: turdidae
+----Family: Turdidae
 ----feature: omnivore
 
 ------Genus: 21  Species: 171  Examples: blue bird
@@ -191,9 +181,9 @@ Choice:> What class:> Removed mammalia
 0) Quit
 Choice:> Class: aves
 feature:
---Order: passeriformes
+--Order: Passeriformes
 --feature:
-----Family: turdidae
+----Family: Turdidae
 ----feature: omnivore
 
 ------Genus: 21  Species: 171  Examples: blue bird
@@ -223,17 +213,17 @@ What feature:> Add feature (y/n):> Add summary (y/n):> Update genus count (0):> 
 0) Quit
 Choice:> Class: aves
 feature:
---Order: passeriformes
+--Order: Passeriformes
 --feature:
-----Family: turdidae
+----Family: Turdidae
 ----feature: omnivore
 
 ------Genus: 21  Species: 171  Examples: blue bird
-Class: chondrichthyes
+Class: Chondrichthyes
 feature:
---Order: carcharhiniformes
+--Order: Carcharhiniformes
 --feature:
-----Family: sphyrnidae
+----Family: Sphyrnidae
 ----feature: dorsal fin, gills, carnivore
 
 ------Genus: 2  Species: 9  Examples: hammerhead shark
@@ -255,7 +245,7 @@ Choice:> File name:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> What class:> Removed chondrichthyes
+Choice:> What class:> Class not found
 
 1) Add data
 2) Display data
@@ -275,8 +265,7 @@ Choice:> What class:> Removed aves
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> going to try save first....
-
+Choice:> File name:> 
 1) Add data
 2) Display data
 3) Remove class
@@ -285,74 +274,14 @@ Choice:> going to try save first....
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "tier3_Out.xml"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> What class:> Added class
-Continue (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Sphyrnidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Class: chondrichthyes
+Choice:> Class: Chondrichthyes
 feature:
+--Order: Carcharhiniformes
+--feature:
+----Family: Sphyrnidae
+----feature: dorsal fin, gills, carnivore
 
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Invalid option
+------Genus: 2  Species: 9  Examples: hammerhead shark
 
 1) Add data
 2) Display data
@@ -362,7 +291,7 @@ Choice:> Invalid option
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
+Choice:> What class:> What order:> What family:> Add feature (y/n):> Add summary (y/n):> Update genus count (2):> Update species count (9):> Add example (y/n):> What example:> Add example (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -371,27 +300,14 @@ Choice:> java.lang.NumberFormatException: For input string: "y"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "bonnethead shark"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Class: chondrichthyes
+Choice:> Class: Chondrichthyes
 feature:
+--Order: Carcharhiniformes
+--feature:
+----Family: Sphyrnidae
+----feature: dorsal fin, gills, carnivore
 
+------Genus: 2  Species: 9  Examples: hammerhead shark, bonnethead shark
 
 1) Add data
 2) Display data
