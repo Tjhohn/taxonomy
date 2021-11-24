@@ -19,6 +19,23 @@ case class Taxonomy() {
     Nodes = newList
   }
 
+  def addFamily(node: Node): TaxonomyNode = {
+    var newFamily : TaxonomyNode = TaxonomyNode(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
+    val children = node.child
+    for(child <- children) {
+      val tag = child.label
+      tag match {
+        case "summary" =>
+        //var newOrder : TaxonomyNode = TaxonomyNode(child.attribute("name").getOrElse("").toString, new ListBuffer[String])
+        //newClass.addSubNode(newOrder)
+        case "feature" =>
+          newFamily.addToFeature(child.text)
+        case _ => null
+      }
+    }
+    return newFamily
+  }
+
   def addOrder(node: Node): TaxonomyNode = {
     var newOrder : TaxonomyNode = TaxonomyNode(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
     val children = node.child
@@ -26,8 +43,7 @@ case class Taxonomy() {
       val tag = child.label
       tag match {
         case "family" =>
-          //var newOrder : TaxonomyNode = TaxonomyNode(child.attribute("name").getOrElse("").toString, new ListBuffer[String])
-          //newClass.addSubNode(newOrder)
+          newOrder.addSubNode(addFamily(child))
         case "feature" =>
           newOrder.addToFeature(child.text)
         case _ => null

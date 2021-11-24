@@ -80,9 +80,17 @@ Choice:> [34;1m1[0m
  What class:> [34;1maves[0m
  What order:> [34;1mgalliforme[0m
  What family:> [34;1mphasianidae[0m
- Added family
-Continue (y/n):> [34;1mn[0m
- 
+ java.lang.ClassCastException: class hohn_tanner.TaxonomyNode cannot be cast to class hohn_tanner.Family (hohn_tanner.TaxonomyNode and hohn_tanner.Family are in unnamed module of loader 'app')
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> [34;1mn[0m
+ java.lang.NumberFormatException: For input string: "n"
 1) Add data
 2) Display data
 3) Remove class
