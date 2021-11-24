@@ -20,14 +20,15 @@ case class Taxonomy() {
   }
 
   def addFamily(node: Node): TaxonomyNode = {
-    var newFamily : TaxonomyNode = TaxonomyNode(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
+    var newFamily : Family = new Family(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
     val children = node.child
     for(child <- children) {
       val tag = child.label
       tag match {
         case "summary" =>
-        //var newOrder : TaxonomyNode = TaxonomyNode(child.attribute("name").getOrElse("").toString, new ListBuffer[String])
-        //newClass.addSubNode(newOrder)
+          newFamily.addToExamples(child.text)
+          newFamily.updateGenusCount(child.attribute("genus").getOrElse("0").toString)
+          newFamily.updateSpeciesCount(child.attribute("species").getOrElse("0").toString)
         case "feature" =>
           newFamily.addToFeature(child.text)
         case _ => null
@@ -37,7 +38,7 @@ case class Taxonomy() {
   }
 
   def addOrder(node: Node): TaxonomyNode = {
-    var newOrder : TaxonomyNode = TaxonomyNode(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
+    var newOrder : Order = new Order(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
     val children = node.child
     for(child <- children) {
       val tag = child.label
@@ -53,7 +54,7 @@ case class Taxonomy() {
   }
 
   def addClass(node: Node): Unit ={
-    var newClass : TaxonomyNode = TaxonomyNode(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
+    var newClass : AnimalClass = new AnimalClass(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
     val children = node.child
     for(child <- children) {
       val tag = child.label

@@ -19,7 +19,27 @@ Choice:> [34;1m4[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- aves
+ k
+r:> [34;1m4[0m
+
+----Family: phasianidae
+----feature: terrestrial
+
+------Genus: 12  Species: 150  Examples: Turkeys, Chickens, Quailse
+----Family: Apterygidae
+----feature: small
+
+------Genus: 67  Species: 233  Examples: Eagle, Hawk, Kitesd
+----Family: Apterygidae
+----feature: small
+
+------Genus: 1  Species: 5  Examples: Kiwi----Family: Dromaiidae
+----feature: tail-less
+
+------Genus: 1  Species: 1  Examples: Emu----Family: Struthionidae
+----feature: large
+
+------Genus: 1  Species: 2  Examples: Ostrich
 
 1) Add data
 2) Display data
@@ -29,8 +49,8 @@ Choice:> [34;1m2[0m
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> [34;1m4[0m
- File name:> [34;1mmammal.xml[0m
+Choice:> [34;1mmammal.xml[0m
+ File name:> [34;1m2[0m
  
 1) Add data
 2) Display data
@@ -40,9 +60,43 @@ Choice:> [34;1m4[0m
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> [34;1m2[0m
- aves
-mammalia
+Choice:> [34;1m0[0m
+ k
+r:> [34;1mNULL[0m
+
+----Family: phasianidae
+----feature: terrestrial
+
+------Genus: 12  Species: 150  Examples: Turkeys, Chickens, Quailse
+----Family: Apterygidae
+----feature: small
+
+------Genus: 67  Species: 233  Examples: Eagle, Hawk, Kitesd
+----Family: Apterygidae
+----feature: small
+
+------Genus: 1  Species: 5  Examples: Kiwi----Family: Dromaiidae
+----feature: tail-less
+
+------Genus: 1  Species: 1  Examples: Emu----Family: Struthionidae
+----feature: large
+
+------Genus: 1  Species: 2  Examples: Ostrich
+r:> [34;1mNULL[0m
+
+e:> [34;1mNULL[0m
+
+----Family: Canidae
+----feature: Fangs, Tail
+
+------Genus: 12  Species: 37  Examples: Dog, Wolf, Coyote----Family: felidae
+----feature: Fangs, retractable claws, Tail
+
+------Genus: 18  Species: 36  Examples: Lion, tiger, domestic catc
+----Family: Delphinidae
+----feature: echolocation, beak
+
+------Genus: 17  Species: 32  Examples: dolphins, porpoises, and whales
 
 1) Add data
 2) Display data
@@ -52,5 +106,5 @@ mammalia
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> [34;1m0[0m
+Choice:> [34;1mNULL[0m
  

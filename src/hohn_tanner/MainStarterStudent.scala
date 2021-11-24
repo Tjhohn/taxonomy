@@ -5,6 +5,9 @@ import java.io.FileWriter
 import scala.collection.mutable.ListBuffer
 import scala.xml.{Elem, Node, XML}
 
+/*
+tier 2c passes improperly as I enforced hierarchy and the sol output allows a class tag when its a family
+ */
 
 
 object MainStarterStudent extends App {

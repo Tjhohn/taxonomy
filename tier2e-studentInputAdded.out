@@ -54,8 +54,31 @@ Choice:> [34;1m4[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- mammal
-aves
+ r
+e:> [34;1m0[0m
+
+----Family: Canidae
+----feature: Fangs, Tail
+
+------Genus: 12  Species: 0  Examples: Dog, Wolf, Coyote----Family: felidae
+----feature:
+
+------Genus: 0  Species: 0  Examples:--Order: Cetacea
+--feature:
+----Family: Delphinidae
+----feature:
+
+------Genus: 17  Species: 32  Examples: --Order: Struthioniformes
+--feature:
+e:> [34;1mNULL[0m
+
+----Family: Apterygidae
+----feature:
+
+------Genus: 0  Species: 0  Examples:
+Class: aves
+feature:
+
 
 1) Add data
 2) Display data
@@ -65,5 +88,5 @@ aves
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> [34;1m0[0m
+Choice:> [34;1mNULL[0m
  
