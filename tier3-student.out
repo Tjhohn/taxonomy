@@ -283,7 +283,7 @@ Choice:> File name:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> What class:> Class not found
+Choice:> What class:> Removed Chondrichthyes
 
 1) Add data
 2) Display data
@@ -312,16 +312,7 @@ Choice:> File name:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> Class: Chondrichthyes
-feature:
---Order: Carcharhiniformes
---feature:
-----Family: Sphyrnidae
-----feature: dorsal fin, gills, carnivore
-
-------Genus: 2  Species: 9  Examples: hammerhead shark
-
-Class: aves
+Choice:> Class: aves
 feature: Feathers, beak
 --Order: galliforme
 --feature: chicken-like, ground feeder
@@ -383,16 +374,7 @@ Choice:> What class:> What order:> What family:> Add feature (y/n):> Add summary
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> Class: Chondrichthyes
-feature:
---Order: Carcharhiniformes
---feature:
-----Family: Sphyrnidae
-----feature: dorsal fin, gills, carnivore
-
-------Genus: 2  Species: 9  Examples: hammerhead shark, bonnethead shark
-
-Class: aves
+Choice:> Class: aves
 feature: Feathers, beak
 --Order: galliforme
 --feature: chicken-like, ground feeder
@@ -434,7 +416,7 @@ feature:
 ----Family: Sphyrnidae
 ----feature: dorsal fin, gills, carnivore
 
-------Genus: 2  Species: 9  Examples: hammerhead shark
+------Genus: 2  Species: 9  Examples: hammerhead shark, bonnethead shark
 
 
 1) Add data

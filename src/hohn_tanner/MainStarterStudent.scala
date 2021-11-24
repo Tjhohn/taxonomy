@@ -139,7 +139,7 @@ object MainStarterStudent extends App {
         var classNode :  TaxonomyNode = null
         print("What class:> ")
         val className = StdIn.readLine()
-        var classOption = tree.accessNodes().find(node => node.getName() == className.toLowerCase())
+        var classOption = tree.accessNodes().find(node => node.getName().toLowerCase() == className.toLowerCase())
         if(classOption.isDefined){
             classNode = classOption.get
             var temp = tree.accessNodes()
