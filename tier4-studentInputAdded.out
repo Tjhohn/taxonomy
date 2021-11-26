@@ -61,13 +61,6 @@ feature: carnivore
 
 ----Genus: 18  Species: 36  Examples: Lion, tiger, domestic cat
 
-Order: Falconiformes
-feature: diurnal, carnivore
---Family: Apterygidae
---feature: small
-
-----Genus: 67  Species: 233  Examples: Eagle, Hawk, Kites
-
 
 1) Add data
 2) Display data
@@ -101,15 +94,6 @@ feature: aquatic
 --feature: echolocation, beak
 
 ----Genus: 17  Species: 32  Examples: dolphins, porpoises, and whales
-
-Class: Chondrichthyes
-feature: aquatic, cartilage skeleton, gills
---Order: Carcharhiniformes
---feature: dorsal fim
-----Family: Sphyrnidae
-----feature: broad head
-
-------Genus: 2  Species: 9  Examples: hammerhead shark
 
 
 1) Add data
@@ -156,7 +140,8 @@ feature: broad head
 0) Quit
 Choice:> [34;1m6[0m
  feature:> [34;1mxyz[0m
- 
+ xyz not found
+
 1) Add data
 2) Display data
 3) Remove class

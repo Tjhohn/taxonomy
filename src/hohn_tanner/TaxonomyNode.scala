@@ -31,16 +31,26 @@ class TaxonomyNode(private var name: String, private var features: ListBuffer[St
 
   }
 
-  def findFeature(feature : String) : Boolean = {
+  def findFeature(feature : String) : (Boolean, String) = {
     var exists = features.find(x => x.toLowerCase() == feature.toLowerCase() )
+    var outputString = ""
     if(exists.isDefined){
-      println(this.displayInfo(0))
-      return true
+      if(outputString == ""){
+        outputString = this.displayInfo(0)
+        return (true, outputString)
+      }
     }
     else {
-      SubNodes.find(x => x.findFeature(feature))//foreach(x => x.findFeature(feature))
+      var tuple2 : (Boolean, String)= null
+      var exists = SubNodes.find(x => {
+        tuple2 = x.findFeature(feature)
+        tuple2._1 == true
+      })//foreach(x => x.findFeature( feature))
+      if(exists.isDefined)
+        return (true, tuple2._2)
+      //SubNodes.find(x => x.findFeature(feature))//foreach(x => x.findFeature(feature))
     }
-    false
+    (false, "")
   }
 
   def displayInfo(level : Int) : String = {

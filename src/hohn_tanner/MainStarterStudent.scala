@@ -191,8 +191,14 @@ object MainStarterStudent extends App {
     def findFeature(tree : Taxonomy): Unit = {
         print("feature:> ")
         val feature = StdIn.readLine()
-        var exists = tree.accessNodes().find(x => x.findFeature(feature))//foreach(x => x.findFeature( feature))
-        if(exists == false)
+        var tuple2 : (Boolean, String)= null
+        var exists = tree.accessNodes().find(x => {
+            tuple2 = x.findFeature(feature)
+            tuple2._1 == true
+        })//foreach(x => x.findFeature( feature))
+        if(exists.isDefined)
+            println(tuple2._2)
+        else
             println(s"$feature not found")
     }
 
