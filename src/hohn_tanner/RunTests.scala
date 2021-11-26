@@ -24,7 +24,8 @@ object RunTests {
         if (RUN_TESTS)
             try {
                 val tests = Array("tier0", "tier1", "tier2a", "tier2b", "tier2c", "tier2d", "tier2e", "tier3", "tier4", "tier5")
-                val createdFiles = Array(false, false, false, true, false, false, false, true, false, false)
+                //val createdFiles = Array(false, false, false, true, false, false, false, true, false, false)
+                val createdFiles = Array(false, false, false, true, true, false, false, true, false, false)
 
                 for ((base, index) <- tests.zipWithIndex) {
                     val inFile = base + ".txt"

@@ -45,12 +45,12 @@
         <feature>Tail</feature>
         <summary species="37" genus="12">Dog, Wolf, Coyote</summary>
       </family>
-      <class name="felidae">
+      <family name="felidae">
         <feature>Fangs</feature>
         <feature>retractable claws</feature>
         <feature>Tail</feature>
         <summary species="36" genus="18">Lion, tiger, domestic cat</summary>
-      </class>
+      </family>
     </order>
     <order name="Cetacea">
       <feature>aquatic</feature>
