@@ -195,7 +195,7 @@ object MainStarterStudent extends App {
         var exists = tree.accessNodes().find(x => {
             tuple2 = x.findFeature(feature)
             tuple2._1 == true
-        })//foreach(x => x.findFeature( feature))
+        })
         if(exists.isDefined)
             println(tuple2._2)
         else

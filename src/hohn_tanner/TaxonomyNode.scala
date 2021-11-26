@@ -45,10 +45,9 @@ class TaxonomyNode(private var name: String, private var features: ListBuffer[St
       var exists = SubNodes.find(x => {
         tuple2 = x.findFeature(feature)
         tuple2._1 == true
-      })//foreach(x => x.findFeature( feature))
+      })
       if(exists.isDefined)
         return (true, tuple2._2)
-      //SubNodes.find(x => x.findFeature(feature))//foreach(x => x.findFeature(feature))
     }
     (false, "")
   }
