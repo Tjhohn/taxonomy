@@ -31,8 +31,16 @@ class TaxonomyNode(private var name: String, private var features: ListBuffer[St
 
   }
 
-  def find() : Unit = {
-
+  def findFeature(feature : String) : Boolean = {
+    var exists = features.find(x => x.toLowerCase() == feature.toLowerCase() )
+    if(exists.isDefined){
+      println(this.displayInfo(0))
+      return true
+    }
+    else {
+      SubNodes.find(x => x.findFeature(feature))//foreach(x => x.findFeature(feature))
+    }
+    false
   }
 
   def displayInfo(level : Int) : String = {

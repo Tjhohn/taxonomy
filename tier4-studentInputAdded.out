@@ -19,18 +19,27 @@ Choice:> [34;1m4[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m6[0m
- TODO
+ feature:> [34;1mfur[0m
+ Class: mammalia
+feature: Fur
+--Order: Carnivora
+--feature: carnivore
+----Family: Canidae
+----feature: Fangs, Tail
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mfur[0m
- java.lang.NumberFormatException: For input string: "fur"
+------Genus: 12  Species: 37  Examples: Dog, Wolf, Coyote
+----Family: felidae
+----feature: Fangs, retractable claws, Tail
+
+------Genus: 18  Species: 36  Examples: Lion, tiger, domestic cat
+--Order: Cetacea
+--feature: aquatic
+----Family: Delphinidae
+----feature: echolocation, beak
+
+------Genus: 17  Species: 32  Examples: dolphins, porpoises, and whales
+
+
 1) Add data
 2) Display data
 3) Remove class
@@ -40,18 +49,26 @@ Choice:> [34;1mfur[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m6[0m
- TODO
+ feature:> [34;1mcarnivore[0m
+ Order: Carnivora
+feature: carnivore
+--Family: Canidae
+--feature: Fangs, Tail
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mcarnivore[0m
- java.lang.NumberFormatException: For input string: "carnivore"
+----Genus: 12  Species: 37  Examples: Dog, Wolf, Coyote
+--Family: felidae
+--feature: Fangs, retractable claws, Tail
+
+----Genus: 18  Species: 36  Examples: Lion, tiger, domestic cat
+
+Order: Falconiformes
+feature: diurnal, carnivore
+--Family: Apterygidae
+--feature: small
+
+----Genus: 67  Species: 233  Examples: Eagle, Hawk, Kites
+
+
 1) Add data
 2) Display data
 3) Remove class
@@ -61,18 +78,13 @@ Choice:> [34;1mcarnivore[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m6[0m
- TODO
+ feature:> [34;1mfangs[0m
+ Family: Canidae
+feature: Fangs, Tail
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mfangs[0m
- java.lang.NumberFormatException: For input string: "fangs"
+--Genus: 12  Species: 37  Examples: Dog, Wolf, Coyote
+
+
 1) Add data
 2) Display data
 3) Remove class
@@ -82,18 +94,24 @@ Choice:> [34;1mfangs[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m6[0m
- TODO
+ feature:> [34;1maquatic[0m
+ Order: Cetacea
+feature: aquatic
+--Family: Delphinidae
+--feature: echolocation, beak
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1maquatic[0m
- java.lang.NumberFormatException: For input string: "aquatic"
+----Genus: 17  Species: 32  Examples: dolphins, porpoises, and whales
+
+Class: Chondrichthyes
+feature: aquatic, cartilage skeleton, gills
+--Order: Carcharhiniformes
+--feature: dorsal fim
+----Family: Sphyrnidae
+----feature: broad head
+
+------Genus: 2  Species: 9  Examples: hammerhead shark
+
+
 1) Add data
 2) Display data
 3) Remove class
@@ -103,18 +121,15 @@ Choice:> [34;1maquatic[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m6[0m
- TODO
+ feature:> [34;1mground feeder[0m
+ Order: galliforme
+feature: chicken-like, ground feeder
+--Family: phasianidae
+--feature: terrestrial
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mground feeder[0m
- java.lang.NumberFormatException: For input string: "ground feeder"
+----Genus: 12  Species: 150  Examples: Turkeys, Chickens, Quails
+
+
 1) Add data
 2) Display data
 3) Remove class
@@ -124,18 +139,13 @@ Choice:> [34;1mground feeder[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m6[0m
- TODO
+ feature:> [34;1mbroad head[0m
+ Family: Sphyrnidae
+feature: broad head
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mbroad head[0m
- java.lang.NumberFormatException: For input string: "broad head"
+--Genus: 2  Species: 9  Examples: hammerhead shark
+
+
 1) Add data
 2) Display data
 3) Remove class
@@ -145,18 +155,8 @@ Choice:> [34;1mbroad head[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m6[0m
- TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mxyz[0m
- java.lang.NumberFormatException: For input string: "xyz"
+ feature:> [34;1mxyz[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -261,18 +261,13 @@ feature: aquatic, cartilage skeleton, gills
 7) Calculate species
 0) Quit
 Choice:> [34;1m6[0m
- TODO
+ feature:> [34;1msings[0m
+ Family: Turdidae
+feature: sings
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1msings[0m
- java.lang.NumberFormatException: For input string: "sings"
+--Genus: 0  Species: 0  Examples:
+
+
 1) Add data
 2) Display data
 3) Remove class
