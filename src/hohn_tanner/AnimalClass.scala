@@ -6,7 +6,6 @@ import scala.xml.Elem
 class AnimalClass(name : String, features : ListBuffer[String])
   extends TaxonomyNode( name , features) {
 
-
   override def displayInfo(level : Int = 0) : String = {
     var outputString = "Class: " + name + "\n"
     outputString = outputString + "feature:"

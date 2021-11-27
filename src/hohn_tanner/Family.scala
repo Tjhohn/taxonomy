@@ -2,7 +2,6 @@ package hohn_tanner
 
 import hohn_tanner.XMLHelper.makeNode
 
-import scala.:+
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.xml.{Elem, Text}
@@ -76,6 +75,5 @@ class Family(name : String, features : ListBuffer[String]) //as they are private
     children = children :+ makeNode("summary", sumAttr, text)
     XMLHelper.makeNode( "family", attr, children )
   }
-
 
 }

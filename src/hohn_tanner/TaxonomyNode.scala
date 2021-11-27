@@ -1,11 +1,9 @@
 package hohn_tanner
 
 import hohn_tanner.XMLHelper.makeNode
-
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.xml.{Elem, Node, Text}
-
 
 class TaxonomyNode(private var name: String, private var features: ListBuffer[String] ) {
 
