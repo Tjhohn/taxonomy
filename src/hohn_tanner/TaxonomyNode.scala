@@ -23,15 +23,7 @@ class TaxonomyNode(private var name: String, private var features: ListBuffer[St
     SubNodes += toAdd
   }
 
-  def loadFile() : Unit = {
-
-  }
-
-  def saveFile() : Unit = {
-
-  }
-
-  def findFeature(feature : String) : (Boolean, String) = {
+  def findFeature(feature : String) : (Boolean, String) = {//can be done with just string but I wanted to try scala tuples
     var exists = features.find(x => x.toLowerCase() == feature.toLowerCase() )
     var outputString = ""
     if(exists.isDefined){
@@ -52,7 +44,7 @@ class TaxonomyNode(private var name: String, private var features: ListBuffer[St
     (false, "")
   }
 
-  def displayInfo(level : Int) : String = {
+  def displayInfo(level : Int) : String = {//this overridded
     name
   }
 
@@ -64,7 +56,7 @@ class TaxonomyNode(private var name: String, private var features: ListBuffer[St
     features
   }
 
-  def writeXml(rank : String): Elem = {
+  def writeXml(rank : String): Elem = {//saveFile in diagram
     val attr: mutable.HashMap[String, String] = mutable.HashMap(("name", name))
     var children = Seq[Elem]()
     features.foreach(x => {
@@ -75,7 +67,7 @@ class TaxonomyNode(private var name: String, private var features: ListBuffer[St
     return XMLHelper.makeNode( rank, attr, children )
   }
 
-  def loadXml(node: Node): Unit = {
+  def loadXml(node: Node): Unit = {//loadFile in diagram
     val attr: mutable.HashMap[String, String] = mutable.HashMap(("name", name))
     val text = Text(name) //ending node
     return XMLHelper.makeNode( "class", attr, text)
@@ -107,27 +99,3 @@ object TaxonomyNode {
     return new TaxonomyNode(name, features)
   }
 }
-//object PetsFunctional {
-//  def apply(): PetsFunctional = {
-//    new PetsFunctional(ListBuffer[PetFunctional](), "owner")
-//  }
-//
-//  def apply(node: Node):PetsFunctional = {
-//    var owner : String = ""
-//    val pets : ListBuffer[PetFunctional] = ListBuffer[PetFunctional]()
-//
-//    val children = node.child //grab all children
-//    for(child <- children) {
-//      val tag = child.label
-//      println(tag)
-//      tag match {
-//        case "owner" =>
-//          owner = child.attribute("name").getOrElse("").toString
-//        case Pet.TAG =>
-//          pets += PetFunctional(child)
-//        case _ => null
-//      }
-//    }
-//    new PetsFunctional(pets, owner)
-//  }
-//}

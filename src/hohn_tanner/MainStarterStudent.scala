@@ -177,7 +177,6 @@ object MainStarterStudent extends App {
         val filename = StdIn.readLine()
         var children =  Seq[Elem]()
         tree.accessNodes().foreach(x =>{
-
             children = children :+ x.writeXml("class")
         })
         var xmlTree : Node = XMLHelper.makeNode("taxonomy",null,  children)
