@@ -7,7 +7,7 @@ import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.xml.{Elem, Text}
 
-class Family(name : String, features : ListBuffer[String])
+class Family(name : String, features : ListBuffer[String]) //as they are private in taxonomy they are private here?
   extends TaxonomyNode( name , features){
   private var species : Int = 0
   private var genus : Int = 0

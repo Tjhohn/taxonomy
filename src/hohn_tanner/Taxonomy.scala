@@ -7,8 +7,24 @@ case class Taxonomy() {
 
   private var Nodes = new ListBuffer[TaxonomyNode]
 
-  def sumSpecies() : Unit ={
-
+  def sumSpecies(className : String) : Int ={
+    var Sum : Int = 0
+    var option = Nodes.par.find( x => x.getName().toLowerCase() == className.toLowerCase())//GRADING: PARALLEL
+    if( option.isDefined){
+      option.get.accessSubNodes().foreach(x =>{
+        if (x.isInstanceOf[Family]){
+          Sum += x.asInstanceOf[Family].getSpeciesCount()
+        }
+        else {
+          x.accessSubNodes().foreach(y => {
+            if (y.isInstanceOf[Family]){
+              Sum += y.asInstanceOf[Family].getSpeciesCount()
+            }
+          })
+        }
+      } )
+    }
+    return Sum
   }
 
   def accessNodes() : ListBuffer[TaxonomyNode] = {
@@ -19,7 +35,7 @@ case class Taxonomy() {
     Nodes = newList
   }
 
-  def addFamily(node: Node): TaxonomyNode = {
+  private def addFamily(node: Node): TaxonomyNode = {
     var newFamily : Family = new Family(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
     val children = node.child
     for(child <- children) {
@@ -37,7 +53,7 @@ case class Taxonomy() {
     return newFamily
   }
 
-  def addOrder(node: Node): TaxonomyNode = {
+  private def addOrder(node: Node): TaxonomyNode = {
     var newOrder : Order = new Order(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
     val children = node.child
     for(child <- children) {
@@ -53,7 +69,7 @@ case class Taxonomy() {
     return newOrder
   }
 
-  def addClass(node: Node): Unit ={
+  private def addClass(node: Node): Unit ={
     var newClass : AnimalClass = new AnimalClass(node.attribute("name").getOrElse("").toString, new ListBuffer[String] )
     val children = node.child
     for(child <- children) {

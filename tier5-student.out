@@ -16,7 +16,7 @@ Choice:> File name:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
+Choice:> What class:> count: 391
 
 1) Add data
 2) Display data
@@ -26,16 +26,7 @@ Choice:> TODO
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "aves"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> TODO
+Choice:> What class:> count: 105
 
 1) Add data
 2) Display data
@@ -45,26 +36,8 @@ Choice:> TODO
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "mammalia"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> TODO
+Choice:> What class:> count: 9
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Chondrichthyes"
 1) Add data
 2) Display data
 3) Remove class
@@ -84,17 +57,8 @@ Continue (y/n):> Add feature (y/n):> Add summary (y/n):> Update genus count (0):
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
+Choice:> What class:> count: 562
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "aves"
 1) Add data
 2) Display data
 3) Remove class

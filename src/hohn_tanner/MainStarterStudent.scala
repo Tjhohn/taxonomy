@@ -5,12 +5,6 @@ import java.io.FileWriter
 import scala.collection.mutable.ListBuffer
 import scala.xml.{Elem, Node, XML}
 
-/*
-tier 2c passes improperly as I enforced hierarchy and the solution output allows a class tag with summary
-when I only allow family nodes to house a summary
- */
-
-
 object MainStarterStudent extends App {
     var choice = -1
     var taxonomy = Taxonomy()
@@ -45,7 +39,7 @@ object MainStarterStudent extends App {
                 case 4 => loadXMLFile(taxonomy)//GRADING: READ
                 case 5 => writeXMLFile(taxonomy)//GRADING: WRITE
                 case 6 => findFeature(taxonomy) //GRADING: FIND
-                case 7 => println("TODO") //GRADING: PARALLEL
+                case 7 => sumSpecies(taxonomy)
                 case _ => println("Invalid option")
             }
         } catch {
@@ -199,6 +193,12 @@ object MainStarterStudent extends App {
             println(tuple2._2)
         else
             println(s"$feature not found")
+    }
+
+    def sumSpecies(tree: Taxonomy): Unit = {
+        print("What class:> ")
+        val className = StdIn.readLine()
+        println(s"count: ${tree.sumSpecies(className.toLowerCase())}")
     }
 
 }
