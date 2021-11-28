@@ -1,5 +1,13 @@
 package hohn_tanner
 
+/*
+tier 0 complete
+tier 1 complete
+tier 2 complete
+tier 3 complete
+tier 4 complete
+tier 5 complete
+ */
 import scala.io.StdIn
 import java.io.FileWriter
 import scala.collection.mutable.ListBuffer
